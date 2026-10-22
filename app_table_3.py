@@ -15,7 +15,7 @@ st.title("Data Table")
 
 @st.cache_resource
 def get_engine():
-    cfg = st.secrets["mysql"]
+    cfg = st.secrets["mysql"]["host"}
     url = URL.create(
         "mysql+pymysql",
         username=cfg["user"],
